@@ -1,0 +1,272 @@
+<UserControl x:Class="PersonalBlog.Views.ProfileView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d">
+    
+    <ScrollViewer VerticalScrollBarVisibility="Auto"
+                  HorizontalScrollBarVisibility="Disabled">
+        <StackPanel>
+            <!-- 页面标题 -->
+            <TextBlock Text="个人简介" 
+                       Style="{StaticResource TitleStyle}"/>
+            
+            <!-- 个人信息卡片 -->
+            <Border Style="{StaticResource CardStyle}">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    
+                    <!-- 头像 -->
+                    <Border Width="120" 
+                            Height="120" 
+                            CornerRadius="60"
+                            BorderBrush="{StaticResource GoldPrimary}"
+                            BorderThickness="3"
+                            Margin="0,0,30,0">
+                        <Border.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                <GradientStop Color="#1E1E1E" Offset="0"/>
+                                <GradientStop Color="#2A2A2A" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Border.Background>
+                        <TextBlock Text="&#xE77B;" 
+                                   FontFamily="Segoe UI Symbol"
+                                   FontSize="56"
+                                   Foreground="{StaticResource GoldPrimary}"
+                                   HorizontalAlignment="Center"
+                                   VerticalAlignment="Center"/>
+                    </Border>
+                    
+                    <!-- 基本信息 -->
+                    <StackPanel Grid.Column="1" VerticalAlignment="Center">
+                        <TextBlock Text="墨香" 
+                                   FontSize="28"
+                                   FontWeight="Bold"
+                                   Foreground="{StaticResource TextPrimary}"
+                                   FontFamily="Microsoft YaHei"/>
+                        
+                        <TextBlock Text="全栈开发工程师 / 技术博主" 
+                                   FontSize="14"
+                                   Foreground="{StaticResource GoldPrimary}"
+                                   Margin="0,8,0,0"
+                                   FontFamily="Microsoft YaHei"/>
+                        
+                        <TextBlock Text="热爱编程，专注于 .NET 和前端技术。喜欢分享技术心得，记录学习历程。" 
+                                   Style="{StaticResource BodyStyle}"
+                                   Margin="0,15,0,0"/>
+                        
+                        <StackPanel Orientation="Horizontal" Margin="0,15,0,0">
+                            <TextBlock Text="&#xE774;" 
+                                       FontFamily="Segoe UI Symbol"
+                                       FontSize="14"
+                                       Foreground="{StaticResource GoldMuted}"
+                                       VerticalAlignment="Center"/>
+                            <TextBlock Text="中国 · 北京" 
+                                       FontSize="13"
+                                       Foreground="{StaticResource TextMuted}"
+                                       Margin="8,0,20,0"
+                                       VerticalAlignment="Center"/>
+                            
+                            <TextBlock Text="&#xE8C8;" 
+                                       FontFamily="Segoe UI Symbol"
+                                       FontSize="14"
+                                       Foreground="{StaticResource GoldMuted}"
+                                       VerticalAlignment="Center"/>
+                            <TextBlock Text="5年工作经验" 
+                                       FontSize="13"
+                                       Foreground="{StaticResource TextMuted}"
+                                       Margin="8,0,20,0"
+                                       VerticalAlignment="Center"/>
+                            
+                            <TextBlock Text="&#xE8A9;" 
+                                       FontFamily="Segoe UI Symbol"
+                                       FontSize="14"
+                                       Foreground="{StaticResource GoldMuted}"
+                                       VerticalAlignment="Center"/>
+                            <TextBlock Text="128篇文章" 
+                                       FontSize="13"
+                                       Foreground="{StaticResource TextMuted}"
+                                       Margin="8,0,0,0"
+                                       VerticalAlignment="Center"/>
+                        </StackPanel>
+                    </StackPanel>
+                </Grid>
+            </Border>
+            
+            <!-- 技能标签 -->
+            <Border Style="{StaticResource CardStyle}">
+                <StackPanel>
+                    <TextBlock Text="技术栈" 
+                               Style="{StaticResource SubtitleStyle}"/>
+                    
+                    <WrapPanel Margin="0,10,0,0">
+                        <Border Background="{StaticResource BackgroundHover}" 
+                                CornerRadius="15"
+                                Padding="15,8"
+                                Margin="0,0,10,10">
+                            <TextBlock Text="C#" 
+                                       Foreground="{StaticResource GoldPrimary}"
+                                       FontSize="13"
+                                       FontWeight="SemiBold"/>
+                        </Border>
+                        <Border Background="{StaticResource BackgroundHover}" 
+                                CornerRadius="15"
+                                Padding="15,8"
+                                Margin="0,0,10,10">
+                            <TextBlock Text=".NET Core" 
+                                       Foreground="{StaticResource GoldPrimary}"
+                                       FontSize="13"
+                                       FontWeight="SemiBold"/>
+                        </Border>
+                        <Border Background="{StaticResource BackgroundHover}" 
+                                CornerRadius="15"
+                                Padding="15,8"
+                                Margin="0,0,10,10">
+                            <TextBlock Text="WPF" 
+                                       Foreground="{StaticResource GoldPrimary}"
+                                       FontSize="13"
+                                       FontWeight="SemiBold"/>
+                        </Border>
+                        <Border Background="{StaticResource BackgroundHover}" 
+                                CornerRadius="15"
+                                Padding="15,8"
+                                Margin="0,0,10,10">
+                            <TextBlock Text="JavaScript" 
+                                       Foreground="{StaticResource GoldPrimary}"
+                                       FontSize="13"
+                                       FontWeight="SemiBold"/>
+                        </Border>
+                        <Border Background="{StaticResource BackgroundHover}" 
+                                CornerRadius="15"
+                                Padding="15,8"
+                                Margin="0,0,10,10">
+                            <TextBlock Text="Vue.js" 
+                                       Foreground="{StaticResource GoldPrimary}"
+                                       FontSize="13"
+                                       FontWeight="SemiBold"/>
+                        </Border>
+                        <Border Background="{StaticResource BackgroundHover}" 
+                                CornerRadius="15"
+                                Padding="15,8"
+                                Margin="0,0,10,10">
+                            <TextBlock Text="SQL Server" 
+                                       Foreground="{StaticResource GoldPrimary}"
+                                       FontSize="13"
+                                       FontWeight="SemiBold"/>
+                        </Border>
+                        <Border Background="{StaticResource BackgroundHover}" 
+                                CornerRadius="15"
+                                Padding="15,8"
+                                Margin="0,0,10,10">
+                            <TextBlock Text="Docker" 
+                                       Foreground="{StaticResource GoldPrimary}"
+                                       FontSize="13"
+                                       FontWeight="SemiBold"/>
+                        </Border>
+                        <Border Background="{StaticResource BackgroundHover}" 
+                                CornerRadius="15"
+                                Padding="15,8"
+                                Margin="0,0,10,10">
+                            <TextBlock Text="Git" 
+                                       Foreground="{StaticResource GoldPrimary}"
+                                       FontSize="13"
+                                       FontWeight="SemiBold"/>
+                        </Border>
+                    </WrapPanel>
+                </StackPanel>
+            </Border>
+            
+            <!-- 关于我 -->
+            <Border Style="{StaticResource CardStyle}">
+                <StackPanel>
+                    <TextBlock Text="关于我" 
+                               Style="{StaticResource SubtitleStyle}"/>
+                    
+                    <TextBlock Style="{StaticResource BodyStyle}" Margin="0,0,0,15">
+                        大家好，我是墨香，一名热爱技术的全栈开发工程师。从大学时期开始接触编程，至今已有五年的开发经验。
+                    </TextBlock>
+                    
+                    <TextBlock Style="{StaticResource BodyStyle}" Margin="0,0,0,15">
+                        我主要专注于 .NET 生态系统，包括 WPF、ASP.NET Core 等技术栈。同时，我也对前端开发充满热情，
+                        熟练使用 Vue.js、React 等现代前端框架。
+                    </TextBlock>
+                    
+                    <TextBlock Style="{StaticResource BodyStyle}" Margin="0,0,0,15">
+                        创建这个博客的初衷是记录自己的学习历程，分享技术心得。我相信知识的价值在于传播，
+                        希望能通过我的文章帮助到更多正在学习编程的朋友。
+                    </TextBlock>
+                    
+                    <TextBlock Style="{StaticResource BodyStyle}">
+                        除了编程，我还喜欢阅读、摄影和旅行。在工作之余，我会探索不同的城市，
+                        用镜头记录生活中的美好瞬间。
+                    </TextBlock>
+                </StackPanel>
+            </Border>
+            
+            <!-- 联系方式 -->
+            <Border Style="{StaticResource CardStyle}">
+                <StackPanel>
+                    <TextBlock Text="联系方式" 
+                               Style="{StaticResource SubtitleStyle}"/>
+                    
+                    <Grid Margin="0,10,0,0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        
+                        <StackPanel Grid.Column="0">
+                            <TextBlock Text="&#xE715;" 
+                                       FontFamily="Segoe UI Symbol"
+                                       FontSize="24"
+                                       Foreground="{StaticResource GoldPrimary}"/>
+                            <TextBlock Text="GitHub" 
+                                       FontSize="14"
+                                       Foreground="{StaticResource TextSecondary}"
+                                       Margin="0,8,0,0"/>
+                            <TextBlock Text="github.com/moxiang" 
+                                       FontSize="12"
+                                       Foreground="{StaticResource TextMuted}"
+                                       Margin="0,5,0,0"/>
+                        </StackPanel>
+                        
+                        <StackPanel Grid.Column="1">
+                            <TextBlock Text="&#xE774;" 
+                                       FontFamily="Segoe UI Symbol"
+                                       FontSize="24"
+                                       Foreground="{StaticResource GoldPrimary}"/>
+                            <TextBlock Text="邮箱" 
+                                       FontSize="14"
+                                       Foreground="{StaticResource TextSecondary}"
+                                       Margin="0,8,0,0"/>
+                            <TextBlock Text="moxiang@example.com" 
+                                       FontSize="12"
+                                       Foreground="{StaticResource TextMuted}"
+                                       Margin="0,5,0,0"/>
+                        </StackPanel>
+                        
+                        <StackPanel Grid.Column="2">
+                            <TextBlock Text="&#xE8D4;" 
+                                       FontFamily="Segoe UI Symbol"
+                                       FontSize="24"
+                                       Foreground="{StaticResource GoldPrimary}"/>
+                            <TextBlock Text="微信" 
+                                       FontSize="14"
+                                       Foreground="{StaticResource TextSecondary}"
+                                       Margin="0,8,0,0"/>
+                            <TextBlock Text="moxiang_blog" 
+                                       FontSize="12"
+                                       Foreground="{StaticResource TextMuted}"
+                                       Margin="0,5,0,0"/>
+                        </StackPanel>
+                    </Grid>
+                </StackPanel>
+            </Border>
+        </StackPanel>
+    </ScrollViewer>
+</UserControl>
