@@ -186,7 +186,7 @@
         <Setter Property="Background" Value="{StaticResource GoldPrimary}"/>
         <Setter Property="Foreground" Value="{StaticResource BackgroundDark}"/>
         <Setter Property="BorderThickness" Value="0"/>
-        <Setter Property="Padding" Value="25,12"/>
+        <Setter Property="Padding" Value="10,5"/>
         <Setter Property="FontSize" Value="14"/>
         <Setter Property="FontWeight" Value="SemiBold"/>
         <Setter Property="FontFamily" Value="Microsoft YaHei"/>
@@ -272,7 +272,7 @@
                     <Border Background="{StaticResource BorderDark}" CornerRadius="5" Width="15">
                         <Track x:Name="PART_Track" IsDirectionReversed="True">
                             <Track.Thumb>
-                                <Thumb Background="{StaticResource GoldMuted}" Width="8" Margin="2,0"/>
+                                <Thumb Background="{StaticResource GoldPrimary}" Width="8" Margin="2,0"/>
                             </Track.Thumb>
                         </Track>
                     </Border>

@@ -67,6 +67,8 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Models\CrcParameterModel.cs" />
+    <Compile Include="Models\IapModels.cs" />
     <Compile Include="Models\LinkItem.cs" />
     <Compile Include="Models\NoteItem.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -79,6 +81,11 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="Services\CrcCalculatorService.cs" />
+    <Compile Include="Services\IapService.cs" />
+    <Compile Include="Services\SerialPortService.cs" />
+    <Compile Include="ViewModels\CrcCalculatorViewModel.cs" />
+    <Compile Include="ViewModels\IapViewModel.cs" />
     <Compile Include="ViewModels\LinksViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
     <Compile Include="ViewModels\NotesViewModel.cs" />
@@ -86,8 +93,14 @@
     <Compile Include="Views\ArticlesView.xaml.cs">
       <DependentUpon>ArticlesView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\CrcCalculatorView.xaml.cs">
+      <DependentUpon>CrcCalculatorView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\GuestbookView.xaml.cs">
       <DependentUpon>GuestbookView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\IapView.xaml.cs">
+      <DependentUpon>IapView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\LinksView.xaml.cs">
       <DependentUpon>LinksView.xaml</DependentUpon>
@@ -110,9 +123,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Views\CrcCalculatorView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\GuestbookView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\IapView.xaml">
+      <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\LinksView.xaml">
       <Generator>MSBuild:Compile</Generator>

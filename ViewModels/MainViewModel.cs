@@ -67,6 +67,12 @@ namespace PersonalBlog.ViewModels
                 case 4:
                     CurrentView = new GuestbookView();
                     break;
+                case 5:
+                    CurrentView = new CrcCalculatorView();
+                    break;
+                case 6:
+                    CurrentView = new IapView();
+                    break;
                 default:
                     CurrentView = new ProfileView();
                     break;

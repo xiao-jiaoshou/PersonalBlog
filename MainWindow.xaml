@@ -122,7 +122,25 @@
                             Style="{StaticResource SidebarButton}"
                             Command="{Binding NavigateCommand}"
                             CommandParameter="4">
-                        
+
+                    </Button>
+
+                    <!-- CRC 计算器 -->
+                    <Button Content="CRC 计算器" 
+                            Tag="&#xE70B;"
+                            Style="{StaticResource SidebarButton}"
+                            Command="{Binding NavigateCommand}"
+                            CommandParameter="5">
+
+                    </Button>
+
+                    <!-- IAP 管理 -->
+                    <Button Content="IAP 管理" 
+                            Tag="&#xE70B;"
+                            Style="{StaticResource SidebarButton}"
+                            Command="{Binding NavigateCommand}"
+                            CommandParameter="6">
+
                     </Button>
                 </StackPanel>
                 
